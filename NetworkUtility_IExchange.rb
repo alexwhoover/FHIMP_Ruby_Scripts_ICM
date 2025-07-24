@@ -168,39 +168,13 @@ net = model_object.open
 net.current_scenario = 'POC_Area_v1'
 puts "Current scenario: #{net.current_scenario}"
 
+# If running in UI, use following code instead to get the current network:
+# net = WSApplication.current_network
+# net_utility = NetworkUtility.new(net)
+
 
 net_utility = NetworkUtility.new(net)
 
-
-
-# File.open("C:/Git/ICMScripts/summary_statistics.csv", "w") do |file|
-# 	file.puts "Testing"
-#     # file.puts [
-#     #     "manhole_id",
-#     #     "upstream_pipe_count",
-#     #     "upstream_pipe_total_length",
-#     #     "upstream_pipe_weighted_avg_diameter",
-#     #     "upstream_pipe_weighted_avg_gradient",
-#     #     "upstream_storm_impervious_area",
-#     #     "upstream_sanitary_population"
-#     # ].join(",");
-
-#     # net_utility.nodes.each do |mh|
-#     #     row = [
-#     #         mh.id,
-#     #         net_utility.count_upstream_pipes(mh),
-#     #         net_utility.calculate_total_length_upstream_pipes(mh),
-#     #         net_utility.calculate_weighted_average_diameter(mh),
-#     #         net_utility.calculate_weighted_average_gradient(mh),
-#     #         net_utility.calculate_upstream_impervious_area_storm(mh),
-#     #         net_utility.calculate_upstream_population_sanitary(mh)
-#     #     ]
-#     #     file.puts row.join(",");
-#     # end
-# end
-# puts "Exported summary statistics to summary_statistics.csv"
-
-# Build all rows in memory first
 rows = []
 header = [
     "manhole_id",
@@ -234,7 +208,7 @@ net_utility.nodes.each do |mh|
     ]
     rows << row
 
-	puts "Proessed manhole: #{mh.id}"
+	puts "Processed manhole: #{mh.id}"
 end
 
 File.open("C:/Git/ICMScripts/summary_statistics.csv", "w") do |file|
