@@ -180,20 +180,79 @@ class NetworkUtility
 		return total_length > 0 ? (total_slope / total_length) : 0.0
 	end
 
+	def calculate_upstream_impervious_area_storm(mh)
+		# Method to calculate the total upstream impervious area for stormwater catchments upstream from a given manhole ID
+		# Returns the total impervious area
 
+		upstream_catchments = select_upstream(mh)[:catchments]
+		total_impervious_area = 0.0
 
+		upstream_catchments.each do |catchment|
+			if catchment.system_type == 'storm'
+				# COV defines catchment areas 1, 2, 3, 4 as impervious
+				perv_percent = catchment.area_percent_1 + catchment.area_percent_2 + catchment.area_percent_3 + catchment.area_percent_4
+				total_impervious_area += catchment.total_area * (perv_percent / 100.0)
+			end
+		end
+
+		return total_impervious_area
+	end
+
+	def calculate_upstream_population_sanitary(mh)
+		# Method to calculate the total upstream population for sanitary catchments upstream from a given manhole ID
+		# Returns the total population
+
+		upstream_catchments = select_upstream(mh)[:catchments]
+		total_population = 0.0
+
+		upstream_catchments.each do |catchment|
+			if catchment.system_type == 'sanitary'
+				total_population += catchment.population
+			end
+		end
+
+		return total_population
+	end
 end
 
-mh_id = 'MH409133'
+mh_id = 'MH417670'
 net = WSApplication.current_network
 net_utility = NetworkUtility.new(net)
-mh = net.row_object('hw_node', mh_id)
-net_utility.select_upstream_links(mh)
-puts net_utility.count_upstream_pipes(mh)
-puts net_utility.calculate_total_length_upstream_pipes(mh)
-puts net_utility.calculate_weighted_average_diameter(mh)
+# mh = net.row_object('hw_node', mh_id)
+# net_utility.select_upstream_all(mh)
 
+# puts "The number of upstream pipes is #{net_utility.count_upstream_pipes(mh)}"
+# puts "The total length of upstream pipes is #{net_utility.calculate_total_length_upstream_pipes(mh)}"
+# puts "The length weighted average diameter of upstream pipes is #{net_utility.calculate_weighted_average_diameter(mh)}"
+# puts "The length weighted average gradient of upstream pipes is #{net_utility.calculate_weighted_average_gradient(mh)}"
+# puts "The total upstream impervious area for stormwater catchments is #{net_utility.calculate_upstream_impervious_area_storm(mh)}"
+# puts "The total upstream population for sanitary catchments is #{net_utility.calculate_upstream_population_sanitary(mh)}"
 
+File.open("C:/Git/ICMScripts/summary_statistics.csv", "w") do |file|
+    file.puts [
+        "manhole_id",
+        "upstream_pipe_count",
+        "upstream_pipe_total_length",
+        "upstream_pipe_weighted_avg_diameter",
+        "upstream_pipe_weighted_avg_gradient",
+        "upstream_storm_impervious_area",
+        "upstream_sanitary_population"
+    ].join(",");
+
+    net_utility.nodes.each do |mh|
+        row = [
+            mh.id,
+            net_utility.count_upstream_pipes(mh),
+            net_utility.calculate_total_length_upstream_pipes(mh),
+            net_utility.calculate_weighted_average_diameter(mh),
+            net_utility.calculate_weighted_average_gradient(mh),
+            net_utility.calculate_upstream_impervious_area_storm(mh),
+            net_utility.calculate_upstream_population_sanitary(mh)
+        ]
+        file.puts row.join(",");
+    end
+end
+puts "Exported summary statistics to summary_statistics.csv"
 
 
 
