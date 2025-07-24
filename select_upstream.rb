@@ -1,58 +1,3 @@
-# Selects all upstream links and nodes from a given manhole ID in the current network.
-# def select_upstream(manhole_id)
-#   net = WSApplication.current_network
-#   net.clear_selection  # Deselect everything to start fresh
-
-#   catchments = net.row_objects('_subcatchments')
-
-#   mh = net.row_object('hw_node', manhole_id)  # Find the starting manhole node
-#   return unless mh  # Exit if not found
-
-#   mh.selected = true  # Select the starting node
-#   mh._seen = true     # Mark as visited to avoid loops
-
-#   # Select catchments draining to the starting node
-#   catchments.each do |catchment|
-#     c.selected = true if catchment.node_id == mh.id
-#   end
-
-#   unprocessedLinks = []  # Queue for links to process
-
-#   # Add all upstream links from the starting node to the queue
-#   mh.us_links.each do |l|
-#     unless l._seen
-#       unprocessedLinks << l
-#       l._seen = true  # Mark link as visited
-#     end
-#   end
-
-#   # Process each link in the queue
-#   while unprocessedLinks.size > 0
-#     working = unprocessedLinks.shift  # Get next link
-#     working.selected = true           # Select the link
-#     workingUSNode = working.us_node   # Get the upstream node of this link
-
-#     # If the upstream node exists and hasn't been visited
-#     if !workingUSNode.nil? && !workingUSNode._seen
-#       workingUSNode.selected = true   # Select the upstream node
-
-#       # Select catchments draining to this upstream node
-#       catchments.each do |catchment|
-#         catchment.selected = true if catchment.node_id == workingUSNode.id
-#       end
-#       # Add all upstream links from this node to the queue
-#       workingUSNode.us_links.each do |l|
-#         unless l._seen
-#           unprocessedLinks << l
-#           l.selected = true           # Select the link immediately
-#           l._seen = true              # Mark link as visited
-#         end
-#       end
-#       workingUSNode._seen = true      # Mark node as visited
-#     end
-#   end
-# end
-
 class NetworkUtility
 	attr_accessor :network, :catchments, :links, :nodes
 
@@ -71,8 +16,8 @@ class NetworkUtility
 		end
 	end
 
-	def select_upstream(manhole_id)
-		# Method to select all upstream nodes, links, and catchments from a given manhole ID
+	def select_upstream(mh)
+		# Method to select all upstream nodes, links, and catchments from a given manhole object
 		# Returns a hash with selected nodes, links, and catchments
 
 		# Arrays to hold catchments, links, and nodes
@@ -81,7 +26,7 @@ class NetworkUtility
 		selected_catchments = []
 		
 		# Find the starting manhole node from @nodes
-		mh = @nodes.find { |node| node.id == manhole_id }
+		#mh = @nodes.find { |node| node.id == manhole_id }
 		return {nodes: [], links: [], catchments: []} unless mh  # Exit if not found
 
 		# Using ._seen attribute to track visited nodes and links
@@ -142,58 +87,58 @@ class NetworkUtility
 		return {nodes: selected_nodes, links: selected_links, catchments: selected_catchments}
 	end
 
-	def select_upstream_nodes(manhole_id)
+	def select_upstream_nodes(mh)
 		# Method to select all upstream nodes from a given manhole ID
 		# Returns void
-		nodes = select_upstream(manhole_id)[:nodes]
+		nodes = select_upstream(mh)[:nodes]
 
 		nodes.each do |node|
 			node.selected = true
 		end
 	end
 
-	def select_upstream_links(manhole_id)
+	def select_upstream_links(mh)
 		# Method to select all upstream links from a given manhole ID
 		# Returns void
-		links = select_upstream(manhole_id)[:links]
+		links = select_upstream(mh)[:links]
 
 		links.each do |link|
 			link.selected = true
 		end
 	end
 
-	def select_upstream_catchments(manhole_id)
+	def select_upstream_catchments(mh)
 		# Method to select all upstream catchments from a given manhole ID
 		# Returns void
-		catchments = select_upstream(manhole_id)[:catchments]
+		catchments = select_upstream(mh)[:catchments]
 
 		catchments.each do |catchment|
 			catchment.selected = true
 		end
 	end
 
-	def select_upstream_all(manhole_id)
+	def select_upstream_all(mh)
 		# Method to select all upstream nodes, links, and catchments from a given manhole ID
 		# Returns void
 
-		select_upstream_nodes(manhole_id)
-		select_upstream_links(manhole_id)
-		select_upstream_catchments(manhole_id)
+		select_upstream_nodes(mh)
+		select_upstream_links(mh)
+		select_upstream_catchments(mh)
 	end
 
-	def count_upstream_pipes(manhole_id)
+	def count_upstream_pipes(mh)
 		# Method to count all upstream pipes from a given manhole ID
 		# Returns the count of upstream pipes
 
-		upstream_links = select_upstream(manhole_id)[:links]
+		upstream_links = select_upstream(mh)[:links]
 		return upstream_links.size
 	end
 
-	def calculate_total_length_upstream_pipes(manhole_id)
+	def calculate_total_length_upstream_pipes(mh)
 		# Method to calculate the total length of all upstream pipes from a given manhole ID
 		# Returns the total length of upstream pipes
 
-		upstream_links = select_upstream(manhole_id)[:links]
+		upstream_links = select_upstream(mh)[:links]
 		total_length = 0.0
 
 		upstream_links.each do |link|
@@ -203,11 +148,11 @@ class NetworkUtility
 		return total_length
 	end
 
-	def calculate_weighted_average_diameter(manhole_id)
+	def calculate_weighted_average_diameter(mh)
 		# Method to calculate the length weighted average diameter of all upstream pipes from a given manhole ID
 		# Returns the length weighted average diameter
 
-		upstream_links = select_upstream(manhole_id)[:links]
+		upstream_links = select_upstream(mh)[:links]
 		total_diameter = 0.0
 		total_length = 0.0
 
@@ -219,14 +164,34 @@ class NetworkUtility
 		return total_length > 0 ? (total_diameter / total_length) : 0.0
 	end
 
+	def calculate_weighted_average_gradient(mh)
+		# Method to calculate the length weighted average slope of all upstream pipes from a given manhole ID
+		# Returns the length weighted average slope
+
+		upstream_links = select_upstream(mh)[:links]
+		total_slope = 0.0
+		total_length = 0.0
+
+		upstream_links.each do |link|
+			total_slope += link.gradient * link.conduit_length
+			total_length += link.conduit_length
+		end
+
+		return total_length > 0 ? (total_slope / total_length) : 0.0
+	end
+
+
+
 end
 
-mh = 'MH417664'
-
-net = NetworkUtility.new(WSApplication.current_network)
-puts net.count_upstream_pipes(mh)
-puts net.calculate_total_length_upstream_pipes(mh)
-puts net.calculate_weighted_average_diameter(mh)
+mh_id = 'MH409133'
+net = WSApplication.current_network
+net_utility = NetworkUtility.new(net)
+mh = net.row_object('hw_node', mh_id)
+net_utility.select_upstream_links(mh)
+puts net_utility.count_upstream_pipes(mh)
+puts net_utility.calculate_total_length_upstream_pipes(mh)
+puts net_utility.calculate_weighted_average_diameter(mh)
 
 
 
