@@ -1,20 +1,13 @@
 # Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+This repository uses InfoWorks ICM's built-in Ruby scripting capabilities to calculate and format network statistics, design storm data, and simulation results into a dataset for use in the AI/ML Flood Hazard Mapping Project.
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+# The Ruby Interface for InfoWorks ICM
+This section describes how to use the Ruby interface for InfoWorks ICM, summarized from the lengthy documentation PDF here: https://help.autodesk.com/lessons/IWICMS_2024_ENU/files/Exchange.pdf.
+## Running a Script
+A ruby script may be run in two ways:
+1. Inside the user interface of ICM, or
+2. In the terminal using the format *PATH TO IExchange.exe (found in ICM install folder)* *PATH TO SCRIPT.rb* *ICM/IA/WS (Use ICM)* *EXTRA ARGUMENTS (Optional)*. For example, based on my path locations, I could run:
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
-
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
-
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+```
+"C:\Program Files\Autodesk\InfoWorks ICM Ultimate 2026\ICMExchange.exe" "C:\Git\ICMScripts\Testing.rb" ICM
+```
