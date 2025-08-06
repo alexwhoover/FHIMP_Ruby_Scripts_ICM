@@ -1,5 +1,7 @@
 # net = WSApplication.current_network
 # puts net.class
+require_relative '../../lib/models/network_utility'
+require_relative '../../lib/models/sim_utility'
 
 # sel = WSApplication.choose_selection("Prompt")
 # puts sel.class
@@ -30,13 +32,10 @@ net = sims_array[0].open
 
 begin
     table_name = "hw_node"
-    puts "=> #{table_name.upcase}"
-    net.row_object_collection(table_name).each do |row_object|
-        # Print the value of the "depnod" results field for each row object
-        depnod_value = row_object.results("FloodDepth")
-        puts "ID: #{row_object.id}, Max Flood Depth: #{depnod_value.max}\n"
-    end
-    puts ""
+    sim_util = SimUtility.new(sims_array[0])
+    # Get results dictionary for node_id and FloodDepth
+    results_dict = sim_util.return_field_dictionary(table_name, "node_id", "FloodDepth")
+    sim_util.export_dictionary_to_csv("output/testing.csv", results_dict, "node_id", "max_flood_depth (m)")
 rescue => e
     puts "Error: #{e.message}"
 end

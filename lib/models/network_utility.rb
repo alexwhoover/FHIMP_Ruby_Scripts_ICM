@@ -12,6 +12,7 @@
 #   - Length-weighted average diameter and gradient of upstream pipes
 #   - Total impervious area for stormwater catchments upstream
 #   - Total population for sanitary catchments upstream
+# - Exports summary statistics for all manholes to a CSV file.
 #
 # Usage:
 #   utility = NetworkUtility.new(network)
@@ -23,11 +24,13 @@
 #   avg_gradient = utility.calculate_weighted_average_gradient(upstream)
 #   impervious_area = utility.calculate_upstream_impervious_area_storm(upstream)
 #   population = utility.calculate_upstream_population_sanitary(upstream)
+#   utility.export_summary_stats_csv("output.csv") # Exports statistics for all manholes
 #
 # Note:
 # - The class uses a breadth-first search algorithm to traverse the network upstream.
 # - The @_seen attribute is used internally to track visited nodes and links during traversal.
 # - All analytical methods operate on the upstream selection returned by `return_upstream`.
+# - The `export_summary_stats_csv` method generates a CSV file containing summary statistics for each manhole in the network.
 
 
 class NetworkUtility
@@ -201,4 +204,66 @@ class NetworkUtility
 
 		return total_population
 	end
+
+	def calculate_depth_to_invert(mh)
+		# Method to calculate the depth to invert at manhole
+		depth = mh.flood_level - mh.chamber_floor
+		return depth
+	end
+
+	def export_summary_stats_csv(output_path)
+		# Method to generate summary statistics for all manholes and export to CSV
+        # Returns the number of manholes processed
+		rows = []
+        header = [
+            "manhole_id",
+			"depth_to_invert",
+            "upstream_pipe_count",
+            "upstream_pipe_total_length",
+            "upstream_pipe_weighted_avg_diameter",
+            "upstream_pipe_weighted_avg_gradient",
+            "upstream_storm_impervious_area",
+            "upstream_sanitary_population",
+            "stream_order"
+        ]
+        rows << header
+
+		@nodes.each do |mh|
+            # Calculate upstream statistics for each manhole
+            upstream = return_upstream(mh)
+
+			depth_to_invert = calculate_depth_to_invert(mh)
+			puts depth_to_invert
+            pipe_count = count_upstream_pipes(upstream)
+            total_length = calculate_total_length_upstream_pipes(upstream)
+            avg_diameter = calculate_weighted_average_diameter(upstream)
+            avg_gradient = calculate_weighted_average_gradient(upstream)
+            storm_impervious = calculate_upstream_impervious_area_storm(upstream)
+            sanitary_population = calculate_upstream_population_sanitary(upstream)
+            stream_order = calculate_shreve_stream_order(upstream)
+
+            row = [
+                mh.id,
+				depth_to_invert,
+                pipe_count,
+                total_length,
+                avg_diameter,
+                avg_gradient,
+                storm_impervious,
+                sanitary_population,
+                stream_order
+            ]
+            rows << row
+
+            puts "Processed manhole: #{mh.id}"
+        end
+
+        # Write to CSV file
+        File.open(output_path, "w") do |file|
+            rows.each { |row| file.puts row.join(",") }
+        end
+
+        puts "Summary statistics exported to: #{output_path}"
+        return @nodes.size
+    end
 end
