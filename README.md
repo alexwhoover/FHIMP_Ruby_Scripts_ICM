@@ -93,6 +93,9 @@ These classes represent the objects in the network. The object returned from WSR
 - *length* for number of objects in collection
 - Use roc.each do |ro| to iterate
 
+*WSRowObject*
+- IMPORTANT: Use *results* to access the results fields of a given row object. This is how you can get the simulation results such as flood depth, etc.
+
 **WSModelObjectCollection**
 - Use [i] to access i'th object in collection
 - *count* returns number of objects in collection

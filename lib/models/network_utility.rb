@@ -1,4 +1,37 @@
+# NetworkUtility
+#
+# This class provides analytical and utility methods for working with a proprietary WSOpenNetwork object,
+# which represents a network of nodes (e.g., manholes), links (e.g., pipes), and catchments (e.g., drainage areas).
+# The WSOpenNetwork class cannot be modified directly, so NetworkUtility acts as a wrapper to extend its functionality.
+#
+# Key Features:
+# - Traverses the network upstream from a given node (manhole), selecting all upstream nodes, links, and catchments.
+# - Calculates various network statistics, including:
+#   - Shreve stream order (number of headwater nodes upstream)
+#   - Total count and length of upstream pipes
+#   - Length-weighted average diameter and gradient of upstream pipes
+#   - Total impervious area for stormwater catchments upstream
+#   - Total population for sanitary catchments upstream
+#
+# Usage:
+#   utility = NetworkUtility.new(network)
+#   upstream = utility.return_upstream(manhole_node)
+#   stream_order = utility.calculate_shreve_stream_order(upstream)
+#   pipe_count = utility.count_upstream_pipes(upstream)
+#   total_length = utility.calculate_total_length_upstream_pipes(upstream)
+#   avg_diameter = utility.calculate_weighted_average_diameter(upstream)
+#   avg_gradient = utility.calculate_weighted_average_gradient(upstream)
+#   impervious_area = utility.calculate_upstream_impervious_area_storm(upstream)
+#   population = utility.calculate_upstream_population_sanitary(upstream)
+#
+# Note:
+# - The class uses a breadth-first search algorithm to traverse the network upstream.
+# - The @_seen attribute is used internally to track visited nodes and links during traversal.
+# - All analytical methods operate on the upstream selection returned by `return_upstream`.
+
+
 class NetworkUtility
+	# Getters and setters
 	attr_accessor :network, :catchments, :links, :nodes
 
 	# Constructor
@@ -80,6 +113,16 @@ class NetworkUtility
 		return {nodes: selected_nodes, links: selected_links, catchments: selected_catchments}
 	end
 
+	def calculate_shreve_stream_order(upstream)
+		# Method to calculate the Shreve stream order for a given upstream selection
+		# Count headwater nodes (nodes with no upstream links)
+		headwater_count = upstream[:nodes].count { |node| node.us_links.length == 0 }
+		
+		# For Shreve method, the stream order at this point equals the number of headwater nodes
+		return headwater_count
+	end		
+
+
 	def count_upstream_pipes(upstream)
 		# Method to count all upstream pipes from a given manhole ID
 		# Returns the count of upstream pipes
@@ -159,62 +202,3 @@ class NetworkUtility
 		return total_population
 	end
 end
-
-# IExchange code
-mh_id = 'MH417670'
-db = WSApplication.open
-model_object = db.model_object_from_type_and_id('Model Network', 1)
-net = model_object.open
-net.current_scenario = 'POC_Area_v1'
-puts "Current scenario: #{net.current_scenario}"
-
-# If running in UI, use following code instead to get the current network:
-# net = WSApplication.current_network
-# net_utility = NetworkUtility.new(net)
-
-
-net_utility = NetworkUtility.new(net)
-
-rows = []
-header = [
-    "manhole_id",
-    "upstream_pipe_count",
-    "upstream_pipe_total_length",
-    "upstream_pipe_weighted_avg_diameter",
-    "upstream_pipe_weighted_avg_gradient",
-    "upstream_storm_impervious_area",
-    "upstream_sanitary_population"
-]
-rows << header
-
-net_utility.nodes.each do |mh|
-	upstream = net_utility.return_upstream(mh)
-
-    pipe_count = net_utility.count_upstream_pipes(upstream)
-    total_length = net_utility.calculate_total_length_upstream_pipes(upstream)
-    avg_diameter = net_utility.calculate_weighted_average_diameter(upstream)
-    avg_gradient = net_utility.calculate_weighted_average_gradient(upstream)
-    storm_impervious = net_utility.calculate_upstream_impervious_area_storm(upstream)
-    sanitary_population = net_utility.calculate_upstream_population_sanitary(upstream)
-
-    row = [
-        mh.id,
-        pipe_count,
-        total_length,
-        avg_diameter,
-        avg_gradient,
-        storm_impervious,
-        sanitary_population
-    ]
-    rows << row
-
-	puts "Processed manhole: #{mh.id}"
-end
-
-File.open("C:/Git/ICMScripts/summary_statistics.csv", "w") do |file|
-    rows.each { |row| file.puts row.join(",") }
-end
-
-puts "Finished calculations"
-
-
