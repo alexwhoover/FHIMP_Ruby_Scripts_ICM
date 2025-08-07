@@ -14,7 +14,7 @@ puts "Current scenario: #{net.current_scenario}"
 net_utility = NetworkUtility.new(net)
 
 begin
-    net_utility.export_summary_stats_csv("C:/Git/ICMScripts/summary_statistics_v3.csv")
+    net_utility.export_summary_stats_csv("C:/Git/ICMScripts/summary_statistics_v4_8_7_2025.csv")
 rescue => e
     puts "Error exporting summary stats: #{e.message}"
 end

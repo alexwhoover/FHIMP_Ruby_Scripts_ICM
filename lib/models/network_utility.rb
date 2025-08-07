@@ -178,16 +178,21 @@ class NetworkUtility
 		# Method to calculate the total upstream impervious area for stormwater catchments upstream from a given manhole ID
 		# Returns the total impervious area
 		total_impervious_area = 0.0
+		total_pervious_area = 0.0
+		total_area = 0.0
 
 		upstream[:catchments].each do |catchment|
 			if catchment.system_type == 'storm'
 				# COV defines catchment areas 1, 2, 3, 4 as impervious
-				perv_percent = catchment.area_percent_1 + catchment.area_percent_2 + catchment.area_percent_3 + catchment.area_percent_4
-				total_impervious_area += catchment.total_area * (perv_percent / 100.0)
+				imperv_percent = catchment.area_percent_1 + catchment.area_percent_2 + catchment.area_percent_3 + catchment.area_percent_4
+				perv_percent = catchment.area_percent_5 + catchment.area_percent_6 + catchment.area_percent_7
+				total_impervious_area += catchment.total_area * (imperv_percent / 100.0)
+				total_pervious_area += catchment.total_area * (perv_percent / 100.0)
+				total_area += catchment.total_area
 			end
 		end
 
-		return total_impervious_area
+		return {total_impervious_area: total_impervious_area, total_pervious_area: total_pervious_area, total_area: total_area}
 	end
 
 	def calculate_upstream_population_sanitary(upstream)
@@ -223,6 +228,8 @@ class NetworkUtility
             "upstream_pipe_weighted_avg_diameter",
             "upstream_pipe_weighted_avg_gradient",
             "upstream_storm_impervious_area",
+			"upstream_storm_pervious_area",
+			"upstream_storm_total_area",
             "upstream_sanitary_population",
             "stream_order"
         ]
@@ -232,16 +239,17 @@ class NetworkUtility
             # Calculate upstream statistics for each manhole
             upstream = return_upstream(mh)
 
+			# Calculate network stats for export
 			depth_to_invert = calculate_depth_to_invert(mh)
-			puts depth_to_invert
             pipe_count = count_upstream_pipes(upstream)
             total_length = calculate_total_length_upstream_pipes(upstream)
             avg_diameter = calculate_weighted_average_diameter(upstream)
             avg_gradient = calculate_weighted_average_gradient(upstream)
-            storm_impervious = calculate_upstream_impervious_area_storm(upstream)
+            storm_areas = calculate_upstream_impervious_area_storm(upstream) # Returns hashmap
             sanitary_population = calculate_upstream_population_sanitary(upstream)
             stream_order = calculate_shreve_stream_order(upstream)
 
+			# Add manhole stats to a row in CSV
             row = [
                 mh.id,
 				depth_to_invert,
@@ -249,7 +257,9 @@ class NetworkUtility
                 total_length,
                 avg_diameter,
                 avg_gradient,
-                storm_impervious,
+                storm_areas[:total_impervious_area],
+				storm_areas[:total_pervious_area],
+				storm_areas[:total_area],
                 sanitary_population,
                 stream_order
             ]
