@@ -1,0 +1,21 @@
+IWTDB002
+#Children,1,()
+#Parent,1,687
+#UsedBy,1,()
+#Uses,1,()
+Asset Group,0,
+Comment,0,
+CreationGUID,1,{070B94DD-838D-445E-B0DF-8960F8500227}
+Hidden,1,0
+ID,0,
+Live Group,0,
+Model Group,1,2
+ModificationGUID,1,{070B94DD-838D-445E-B0DF-8960F8500227}
+ModifiedBy,1,CAAH073861
+Name,1,Watercourses
+RecycledBy,0,
+RecycleParent,0,
+RecycleParentType,0,
+WhenCreated,1,44258.55464120
+WhenModified,1,44258.55464120
+WhenRecycled,0,

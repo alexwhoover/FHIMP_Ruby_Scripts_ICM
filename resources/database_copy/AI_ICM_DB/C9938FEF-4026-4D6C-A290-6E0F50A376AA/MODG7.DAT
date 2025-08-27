@@ -1,0 +1,22 @@
+IWTDB002
+#Children,1,"(270,526)"
+#Parent,1,689
+#UsedBy,1,()
+#Uses,1,()
+Comment,0,
+CreationGUID,1,{09A9597C-A628-475D-BD92-A8710577E79D}
+Hidden,1,0
+ID,1,7
+Live Group,0,
+Master Group,1,2
+ModificationGUID,1,{09A9597C-A628-475D-BD92-A8710577E79D}
+ModifiedBy,1,ascott
+Name,1,Groundwater Infiltration
+NoInheritUserRoles,0,
+Parent,0,
+RecycledBy,0,
+RecycleParent,0,
+RecycleParentType,0,
+WhenCreated,1,45261.57694444
+WhenModified,1,45261.57694444
+WhenRecycled,0,

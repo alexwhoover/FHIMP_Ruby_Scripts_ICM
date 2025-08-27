@@ -1,0 +1,25 @@
+IWTDB002
+#Children,1,()
+#Parent,1,6831
+#UsedBy,1,()
+#Uses,1,()
+Blob Handler,0,
+Buildup Time,0,
+Catchment Runoff Data Storage,0,
+Comment,0,
+CreationGUID,1,{3410C04F-3FCE-401E-AD3D-9420FE2247DC}
+Flow Survey,0,
+Hidden,1,0
+ID,0,
+Live Group,0,
+Model Group,1,26
+ModificationGUID,1,{3410C04F-3FCE-401E-AD3D-9420FE2247DC}
+ModifiedBy,1,Matthew Casale
+Name,1,2024
+Rainfall Event Storage,0,
+RecycledBy,0,
+RecycleParent,0,
+RecycleParentType,0,
+WhenCreated,1,45580.64278935
+WhenModified,1,45580.64413194
+WhenRecycled,0,

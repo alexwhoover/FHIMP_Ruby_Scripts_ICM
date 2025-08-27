@@ -1,0 +1,22 @@
+IWTDB002
+#Children,1,(7855)
+#Parent,1,945
+#UsedBy,1,()
+#Uses,1,()
+Comment,0,
+CreationGUID,1,{000F95C2-76F4-41E4-891B-2251C408A726}
+Hidden,1,0
+ID,1,17
+Live Group,0,
+Master Group,1,3
+ModificationGUID,1,{000F95C2-76F4-41E4-891B-2251C408A726}
+ModifiedBy,1,Andrew Scott
+Name,1,Graph Group
+NoInheritUserRoles,0,
+Parent,0,
+RecycledBy,0,
+RecycleParent,0,
+RecycleParentType,0,
+WhenCreated,1,45744.59446759
+WhenModified,1,45744.59446759
+WhenRecycled,0,

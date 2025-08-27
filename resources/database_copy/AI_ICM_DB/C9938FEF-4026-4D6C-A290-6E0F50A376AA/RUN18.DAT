@@ -1,0 +1,162 @@
+IWTDB002
+#Children,1,"(15895,16151,16407,16663,16919,17175,17431,17687,17943,18199,18455,18711,18967,19223,19479,19735,19991,20247,20503,20759,21015,21271,21527,21783,22039,22295,22551,22807,23063,23319,23575,23831,24087,24343,24599,24855,25111,25367,25623,25879,26135,26391,26647,26903,27159,27415,27671,27927,28183,28439,28695,28951,29207,29463,29719,29975,30231,30487,30743,30999,31255,31511,31767,32023,32279,32535,32791,33047,33303,33559,33815,34071,34327,34583,34839,35095,35351,35607,35863,36119,36375,36631,36887,37143,37399,37655,37911,38167,38423,38679,38935,39191,39447,39703,39959,40215,40471,40727,40983,41239,41495,41751,42007,42263,42519,42775,43031,43287,43543,43799,44055,44311,44567,44823,45079,45335,45591,45847,46103,46359,46615,46871,47127,47383,47639,47895,48151,48407,48663,48919,49175,49431,49687,49943,50199)"
+#Parent,1,6063
+#UsedBy,1,()
+#Uses,1,"(270,425,271)"
+2D Bed load,1,0
+Always Use Final State,1,0
+AppendResults,0,
+AppendResultsID,0,
+Assimilation,0,
+Base Time,1,72686.000000
+Buildup Time,0,
+CheckPumps,1,0
+Comment,0,
+ConcentrationWarning,1,0.000000
+CreateType,0,
+CreationGUID,1,{CF0CA431-7FAF-4E25-9A97-36A0DB40FB38}
+DamageTs,1,1
+DeleteTVDAfterStatistics,0,
+Depth,1,0.001000
+Depth_threshold,1,0.001000
+Disposition,0,
+DoLevelFillIn,1,1
+DontApplyRainfallSmoothing,1,1
+DontLogModeSwitches,1,1
+DontLogRTCRuleChanges,1,1
+DontOutputRTCState,1,1
+Duration,1,2160
+DurationUnit,1,1
+DWFDefinition,0,
+DWFModeResults,1,0
+DWFMultiplier,1,32
+End Duration,1,0
+End Time,1,0.000000
+EpisodeCollection,0,
+Erosion Deposition,1,0
+EveryNode,1,0
+EveryOutflow,1,0
+EverySubcatchment,1,0
+ExitOnFailedInit,1,1
+ExitOnFailedInitCompletion,1,0
+Experimental,0,
+Export Results,0,
+ExportedToOpenMI,0,
+FastEngine,1,0
+GaugeMultiplier,1,1
+Gauges,0,
+GetStartTimeFromRainEvent,1,0
+GPUPrecision,1,0
+Ground Infiltration,1,1
+Hidden,0,
+ID,1,18
+IncludeActions,0,
+IncludeBaseFlow,1,0
+IncludeLevel,1,0
+IncludeNode,1,0
+IncludeOutflow,1,0
+IncludeRainfall,1,0
+IncludeRTC,1,0
+IncludeRunoff,1,0
+IncludeTradeFlow,1,0
+IncludeWastewater,1,0
+Inflow,0,
+InitCompletionMinutes,1,100000
+Initial Conditions 1D,0,
+Initial Conditions 2D,0,
+Initial Conditions Catchment,0,
+InundationMapDepthThreshold,1,0.010000
+Level,0,
+LevelLag,1,0
+LevelThreshold,1,0.000000
+Live Group,0,
+LiveBaselineRun,0,
+Manifest,0,
+MaxVelocity,1,10.000000
+Minor Timestep 2D,1,0
+Model Group,1,23
+Model Network,1,1
+Model Network Commit ID,1,5
+ModificationGUID,1,{55CF2AC7-8E5D-40CF-A5D4-3038534D25AF}
+ModifiedBy,1,VAK8324
+Momentum,1,0.001000
+MultiScenarioInUI,1,0
+Name,1,AI_POC_Dataset
+NetworkCheckedOutRevisionID,0,
+NodeLag,1,0
+NodeThreshold,1,0.000000
+OriginTime,1,0.000000
+OutflowLag,1,0
+OutflowThreshold,1,0.000000
+Pipe Sediment Data,0,
+Pollutant Graph,0,
+Protect,0,
+QM Dependent Fractions,1,0
+QM Hydraulic Feedback,1,1
+QM Model H2S,1,0
+QM Model Macrophytes,1,0
+QM Multiplier,1,0
+QM Oxygen Demand,1,BOD
+QM Pollutant Enabled,0,
+RainfallLag,1,0
+RainfallThreshold,1,0.000000
+RainType,1,2
+ReadSubeventNAPIAndAntecedDepth,1,0
+ReadSubeventParams,1,0
+RecycledBy,0,
+RecycleParent,0,
+RecycleParentType,0,
+RefreshTSDB,1,0
+Regulator,0,
+Results Selector,1,0
+ResultsMultiplier,1,5
+RTCLag,1,0
+RTCRulesOverride,1,1
+RunoffOnly,1,0
+RunoffOnlyEx,1,Warm-up
+Save Final State,1,0
+SaveStateAtSpecifiedTime,1,0
+Sediment Fraction Enabled,0,
+Sim,0,
+SpillCorrection,1,1
+Start Time,1,72686.000000
+StatePower,1,2.000000
+StateSearchRadius,1,100.000000
+StopOnEndOfTimeVaryingData,1,1
+StoreDetails,0,
+StoreMax,0,
+StorePRN,1,1
+StormDefinition,0,
+SubcatchmentLag,1,0
+SubcatchmentThreshold,1,0.000000
+SynchroniseAndOverlapSims,1,0
+SynchroniseStartTime,0,
+Theta,1,0.900000
+Time_lag,1,60.000000
+TimeSeriesSimulation,1,1
+TimeStep,1,60
+timestep_stability_control,1,0.950000
+TimestepLog,1,0
+TimeZoneKey,1,Pacific Standard Time
+Trade Waste,0,
+TSDBExclusionTime,1,0.000000
+TSDBVersionTime,1,0.000000
+Use_local_steady_state,1,0
+UseBaseTime,1,0
+UseGPU,1,1
+UseLiveData,1,0
+UseQM,1,0
+UseStateTimeOf,0,
+ValidateTVD,1,0
+Velocity,1,0.000000
+Velocity_threshold,1,0.001000
+VelocityWarning,1,0.000000
+VolumeBalanceWarning,1,0.000000
+Warmup,1,0
+WarmupUnit,1,0
+WarningBag,0,
+Waste Water,1,1
+WhenCreated,1,45875.45232639
+WhenModified,1,45875.45232639
+WhenRecycled,0,
+Working,1,0

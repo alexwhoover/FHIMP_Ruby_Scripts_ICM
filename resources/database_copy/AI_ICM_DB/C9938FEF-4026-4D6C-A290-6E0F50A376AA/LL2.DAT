@@ -1,0 +1,21 @@
+IWTDB002
+#Children,1,()
+#Parent,1,687
+#UsedBy,1,()
+#Uses,1,()
+Asset Group,0,
+Comment,0,
+CreationGUID,1,{BD308077-3DB6-4A0D-B760-B5D8F561A0CE}
+Hidden,1,0
+ID,0,
+Live Group,0,
+Model Group,1,2
+ModificationGUID,1,{BD308077-3DB6-4A0D-B760-B5D8F561A0CE}
+ModifiedBy,1,CAAH073861
+Name,1,Streets
+RecycledBy,0,
+RecycleParent,0,
+RecycleParentType,0,
+WhenCreated,1,44258.55440972
+WhenModified,1,44258.55440972
+WhenRecycled,0,

@@ -1,0 +1,22 @@
+IWTDB002
+#Children,1,()
+#Parent,1,6319
+#UsedBy,1,()
+#Uses,1,()
+Comment,0,
+CreationGUID,1,{3F0B12BD-EF3E-4A63-8C22-649F9AB95CDA}
+Hidden,1,0
+ID,1,2
+Live Group,0,
+Model Group,1,24
+ModificationGUID,1,{3F0B12BD-EF3E-4A63-8C22-649F9AB95CDA}
+ModifiedBy,1,Andrew Scott
+Name,1,Observed vs Predicted Graph - WWF
+RecycledBy,0,
+RecycleParent,0,
+RecycleParentType,0,
+SubType,1,4
+UseCurrentSelection,1,0
+WhenCreated,1,45744.59381944
+WhenModified,1,45744.59483796
+WhenRecycled,0,

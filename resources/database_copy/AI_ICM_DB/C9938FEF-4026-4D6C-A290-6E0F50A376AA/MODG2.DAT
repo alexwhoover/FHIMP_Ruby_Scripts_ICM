@@ -1,0 +1,22 @@
+IWTDB002
+#Children,1,"(354,610,866,1122,1378)"
+#Parent,1,433
+#UsedBy,1,()
+#Uses,1,()
+Comment,0,
+CreationGUID,1,{6B3E64B2-E5E3-4E0A-9B23-02C0DC1FCDEB}
+Hidden,1,0
+ID,1,2
+Live Group,0,
+Master Group,1,1
+ModificationGUID,1,{6B3E64B2-E5E3-4E0A-9B23-02C0DC1FCDEB}
+ModifiedBy,1,CAAH073861
+Name,1,GIS Layer List
+NoInheritUserRoles,0,
+Parent,0,
+RecycledBy,0,
+RecycleParent,0,
+RecycleParentType,0,
+WhenCreated,1,44258.55395833
+WhenModified,1,44258.55395833
+WhenRecycled,0,

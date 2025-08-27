@@ -1,0 +1,27 @@
+IWTDB002
+#Children,1,()
+#Parent,1,2479
+#UsedBy,1,"(278,534,790,1046,1302,1558,1814,2070,2326,3606,3862,4118,4374,4630)"
+#Uses,1,()
+CheckInGUID,0,
+Comment,0,
+Computer,0,
+CreationGUID,1,{AAA031D4-3F4C-46FD-8734-5B2606860C72}
+Current,0,
+Default,0,
+Hidden,1,0
+ID,1,1
+Locked,0,
+Model Group,1,9
+ModificationGUID,1,{AAA031D4-3F4C-46FD-8734-5B2606860C72}
+ModifiedBy,1,Andrew Scott
+Name,1,CAH-Existing_v1
+Parent,0,
+RecycledBy,0,
+RecycleParent,0,
+RecycleParentType,0,
+ServerBranchID,0,
+WhenCreated,1,45744.56083333
+WhenModified,1,45744.56083333
+WhenRecycled,0,
+WhenValidated,0,

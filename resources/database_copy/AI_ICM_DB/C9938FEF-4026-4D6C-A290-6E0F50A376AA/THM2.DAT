@@ -1,0 +1,21 @@
+IWTDB002
+#Children,1,()
+#Parent,1,431
+#UsedBy,1,()
+#Uses,1,()
+Asset Group,0,
+Comment,0,
+CreationGUID,1,{D3C6DC68-960D-46B6-BDA0-50EFBC77A0B0}
+Hidden,1,0
+ID,0,
+Live Group,0,
+Model Group,1,1
+ModificationGUID,1,{D3C6DC68-960D-46B6-BDA0-50EFBC77A0B0}
+ModifiedBy,1,CAAH073861
+Name,1,Results - Link Surcharge State
+RecycledBy,0,
+RecycleParent,0,
+RecycleParentType,0,
+WhenCreated,1,44258.56159722
+WhenModified,1,44258.56160880
+WhenRecycled,0,

@@ -1,0 +1,27 @@
+IWTDB002
+#Children,1,()
+#Parent,1,4015
+#UsedBy,1,"(2582,2838,3094,3350)"
+#Uses,1,()
+CheckInGUID,0,
+Comment,0,
+Computer,0,
+CreationGUID,1,{26384AEB-350D-48CA-A7C3-043356F58F05}
+Current,0,
+Default,0,
+Hidden,1,0
+ID,1,2
+Locked,0,
+Model Group,1,15
+ModificationGUID,1,{26384AEB-350D-48CA-A7C3-043356F58F05}
+ModifiedBy,1,Andrew Scott
+Name,1,CAH-Future_v1
+Parent,0,
+RecycledBy,0,
+RecycleParent,0,
+RecycleParentType,0,
+ServerBranchID,0,
+WhenCreated,1,45744.56083333
+WhenModified,1,45744.56083333
+WhenRecycled,0,
+WhenValidated,0,

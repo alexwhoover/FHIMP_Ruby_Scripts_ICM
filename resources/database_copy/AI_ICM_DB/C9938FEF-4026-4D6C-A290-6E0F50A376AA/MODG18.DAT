@@ -1,0 +1,22 @@
+IWTDB002
+#Children,1,"(525,781,1037,1293,1549,1805,2061)"
+#Parent,1,174
+#UsedBy,1,()
+#Uses,1,()
+Comment,0,
+CreationGUID,1,{693ADF87-98AA-4EBF-9BD2-93F1D28BAAE7}
+Hidden,1,0
+ID,1,18
+Live Group,0,
+Master Group,0,
+ModificationGUID,1,{693ADF87-98AA-4EBF-9BD2-93F1D28BAAE7}
+ModifiedBy,1,ascott
+Name,1,Historical Rainfall
+NoInheritUserRoles,0,
+Parent,0,
+RecycledBy,1,VAK8324
+RecycleParent,1,8
+RecycleParentType,1,175
+WhenCreated,1,45240.58791667
+WhenModified,1,45240.58791667
+WhenRecycled,1,45875.44487269

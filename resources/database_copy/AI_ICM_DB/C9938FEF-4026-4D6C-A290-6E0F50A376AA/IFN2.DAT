@@ -1,0 +1,20 @@
+IWTDB002
+#Children,1,()
+#Parent,1,1967
+#UsedBy,1,"(534,790,1046,1302,2070,2326)"
+#Uses,1,()
+Comment,0,
+CreationGUID,1,{153E5939-DC6D-4D27-AEBB-A77550B4281D}
+Hidden,1,0
+ID,1,2
+Live Group,0,
+Model Group,1,7
+ModificationGUID,1,{153E5939-DC6D-4D27-AEBB-A77550B4281D}
+ModifiedBy,1,ascott
+Name,1,Ground infiltration - WWF Calibration Runs
+RecycledBy,0,
+RecycleParent,0,
+RecycleParentType,0,
+WhenCreated,1,45317.56409722
+WhenModified,1,45321.61937500
+WhenRecycled,0,

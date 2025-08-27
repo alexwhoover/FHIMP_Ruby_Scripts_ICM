@@ -1,0 +1,22 @@
+IWTDB002
+#Children,1,()
+#Parent,1,6319
+#UsedBy,1,()
+#Uses,1,()
+Comment,0,
+CreationGUID,1,{B40452DA-01C0-4B61-87E9-F644D5353956}
+Hidden,1,0
+ID,1,3
+Live Group,0,
+Model Group,1,24
+ModificationGUID,1,{B40452DA-01C0-4B61-87E9-F644D5353956}
+ModifiedBy,1,Andrew Scott
+Name,1,Observed vs Predicted Graph - DWF
+RecycledBy,0,
+RecycleParent,0,
+RecycleParentType,0,
+SubType,1,4
+UseCurrentSelection,1,0
+WhenCreated,1,45744.59399306
+WhenModified,1,45744.59708333
+WhenRecycled,0,

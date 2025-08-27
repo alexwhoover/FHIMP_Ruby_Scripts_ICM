@@ -1,0 +1,22 @@
+IWTDB002
+#Children,1,"(19213,19469,19725,19981,20237)"
+#Parent,1,5295
+#UsedBy,1,()
+#Uses,1,()
+Comment,0,
+CreationGUID,1,{4772EB96-75BC-4EF8-BDE4-03B3D3E14D10}
+Hidden,1,0
+ID,1,43
+Live Group,0,
+Master Group,0,
+ModificationGUID,1,{4772EB96-75BC-4EF8-BDE4-03B3D3E14D10}
+ModifiedBy,1,ascott
+Name,1,100-Year
+NoInheritUserRoles,0,
+Parent,1,20
+RecycledBy,1,VAK8324
+RecycleParent,0,
+RecycleParentType,0,
+WhenCreated,1,45456.68542824
+WhenModified,1,45456.68542824
+WhenRecycled,1,45875.44478009

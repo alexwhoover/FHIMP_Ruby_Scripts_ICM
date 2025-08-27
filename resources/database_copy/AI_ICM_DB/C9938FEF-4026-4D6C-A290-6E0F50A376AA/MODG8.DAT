@@ -1,0 +1,22 @@
+IWTDB002
+#Children,1,(15279)
+#Parent,1,689
+#UsedBy,1,()
+#Uses,1,()
+Comment,0,
+CreationGUID,1,{5C74B49C-1E39-4025-AA15-348E6E7FAB9C}
+Hidden,1,0
+ID,1,8
+Live Group,0,
+Master Group,1,2
+ModificationGUID,1,{5C74B49C-1E39-4025-AA15-348E6E7FAB9C}
+ModifiedBy,1,CAAH073861
+Name,1,Rainfall Group
+NoInheritUserRoles,0,
+Parent,0,
+RecycledBy,0,
+RecycleParent,0,
+RecycleParentType,0,
+WhenCreated,1,44258.55181713
+WhenModified,1,44258.55181713
+WhenRecycled,0,

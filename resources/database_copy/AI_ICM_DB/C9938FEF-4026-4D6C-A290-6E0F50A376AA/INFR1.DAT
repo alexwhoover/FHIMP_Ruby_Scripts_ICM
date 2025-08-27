@@ -1,0 +1,19 @@
+IWTDB002
+#Children,1,()
+#Parent,1,943
+#UsedBy,1,()
+#Uses,1,()
+Comment,0,
+CreationGUID,1,{E07D55D3-3527-4EB2-B74F-FF9017B40C50}
+Hidden,1,0
+ID,0,
+Model Group,1,3
+ModificationGUID,1,{E07D55D3-3527-4EB2-B74F-FF9017B40C50}
+ModifiedBy,1,CAAH073861
+Name,1,Headloss
+RecycledBy,0,
+RecycleParent,0,
+RecycleParentType,0,
+WhenCreated,1,44258.57943287
+WhenModified,1,44322.47909722
+WhenRecycled,0,

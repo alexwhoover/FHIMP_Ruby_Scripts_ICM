@@ -1,0 +1,21 @@
+IWTDB002
+#Children,1,()
+#Parent,1,1199
+#UsedBy,1,()
+#Uses,1,()
+Asset Group,0,
+Comment,0,
+CreationGUID,1,{8AB808C2-9CBA-4DCF-8D50-6B65A1006596}
+Hidden,1,0
+ID,0,
+Live Group,0,
+Model Group,1,4
+ModificationGUID,1,{8AB808C2-9CBA-4DCF-8D50-6B65A1006596}
+ModifiedBy,1,GOW7023
+Name,1,Node Missing Ground Level
+RecycledBy,0,
+RecycleParent,0,
+RecycleParentType,0,
+WhenCreated,1,44308.64244213
+WhenModified,1,45146.58377315
+WhenRecycled,0,

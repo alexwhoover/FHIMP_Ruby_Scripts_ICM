@@ -1,0 +1,22 @@
+IWTDB002
+#Children,1,"(11695,11951,12207,12463,12719,12975,13231)"
+#Parent,1,3759
+#UsedBy,1,()
+#Uses,1,()
+Comment,0,
+CreationGUID,1,{856C4135-8355-46C4-BB33-ED95B6AAE406}
+Hidden,1,0
+ID,1,27
+Live Group,0,
+Master Group,0,
+ModificationGUID,1,{856C4135-8355-46C4-BB33-ED95B6AAE406}
+ModifiedBy,1,ascott
+Name,1,Design Storms 2100 Zone 1 North (Moderate)
+NoInheritUserRoles,0,
+Parent,1,14
+RecycledBy,0,
+RecycleParent,0,
+RecycleParentType,0,
+WhenCreated,1,45407.64216435
+WhenModified,1,45407.64216435
+WhenRecycled,0,

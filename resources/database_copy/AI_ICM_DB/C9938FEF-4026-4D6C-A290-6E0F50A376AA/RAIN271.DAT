@@ -1,0 +1,25 @@
+IWTDB002
+#Children,1,()
+#Parent,1,174
+#UsedBy,1,()
+#Uses,1,()
+Blob Handler,0,
+Buildup Time,0,
+Catchment Runoff Data Storage,0,
+Comment,0,
+CreationGUID,1,{F47D49C5-6B32-45CA-95D5-D83E5E2DBC51}
+Flow Survey,0,
+Hidden,0,
+ID,1,271
+Live Group,0,
+Model Group,0,
+ModificationGUID,1,{EA1133FF-0871-4374-B830-2ACFB7E16DC4}
+ModifiedBy,1,VAK8324
+Name,1,COV2018_2050Moderate_50y2h_Z1S_AES
+Rainfall Event Storage,0,
+RecycledBy,1,VAK8324
+RecycleParent,1,59
+RecycleParentType,1,175
+WhenCreated,1,45875.44548611
+WhenModified,1,45875.44548611
+WhenRecycled,1,45875.44645833

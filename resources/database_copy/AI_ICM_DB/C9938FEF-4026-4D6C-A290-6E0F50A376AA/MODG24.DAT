@@ -1,0 +1,22 @@
+IWTDB002
+#Children,1,"(684,940)"
+#Parent,1,2991
+#UsedBy,1,()
+#Uses,1,()
+Comment,0,
+CreationGUID,1,{5EC7EC46-91E8-4D14-83E5-9619384DEC41}
+Hidden,1,0
+ID,1,24
+Live Group,0,
+Master Group,0,
+ModificationGUID,1,{5EC7EC46-91E8-4D14-83E5-9619384DEC41}
+ModifiedBy,1,Andrew Scott
+Name,1,Observed vs Predicted Graph
+NoInheritUserRoles,0,
+Parent,1,11
+RecycledBy,0,
+RecycleParent,0,
+RecycleParentType,0,
+WhenCreated,1,45744.59359954
+WhenModified,1,45744.59359954
+WhenRecycled,0,

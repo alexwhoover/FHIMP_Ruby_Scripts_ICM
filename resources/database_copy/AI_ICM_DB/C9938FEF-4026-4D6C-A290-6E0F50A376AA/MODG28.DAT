@@ -1,0 +1,22 @@
+IWTDB002
+#Children,1,"(13487,13743,13999,14255,14511,14767,15023)"
+#Parent,1,3759
+#UsedBy,1,()
+#Uses,1,()
+Comment,0,
+CreationGUID,1,{084FFFC7-3276-42B8-AB28-868F2D916363}
+Hidden,1,0
+ID,1,28
+Live Group,0,
+Master Group,0,
+ModificationGUID,1,{084FFFC7-3276-42B8-AB28-868F2D916363}
+ModifiedBy,1,ascott
+Name,1,Design Storms Ex. Zone 1 North-2018
+NoInheritUserRoles,0,
+Parent,1,14
+RecycledBy,0,
+RecycleParent,0,
+RecycleParentType,0,
+WhenCreated,1,45407.64216435
+WhenModified,1,45407.64216435
+WhenRecycled,0,

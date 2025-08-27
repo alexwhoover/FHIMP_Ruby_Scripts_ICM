@@ -1,0 +1,21 @@
+IWTDB002
+#Children,1,"(3247,3503,3759,4015,4271,4527)"
+#Parent,1,433
+#UsedBy,1,()
+#Uses,1,()
+Comment,0,
+CreationGUID,1,{D9E7387D-12CD-444F-93D6-EBB1B33D70E7}
+Hidden,1,0
+ID,1,3
+Master Group,0,
+ModificationGUID,1,{D9E7387D-12CD-444F-93D6-EBB1B33D70E7}
+ModifiedBy,1,Andrew Scott
+Name,1,CAH-Future
+NoInheritUserRoles,0,
+Parent,1,1
+RecycledBy,0,
+RecycleParent,0,
+RecycleParentType,0,
+WhenCreated,1,45744.50193287
+WhenModified,1,45744.50193287
+WhenRecycled,0,

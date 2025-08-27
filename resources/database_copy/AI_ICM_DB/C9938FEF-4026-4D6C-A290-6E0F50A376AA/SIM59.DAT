@@ -1,0 +1,40 @@
+IWTDB002
+#Children,1,()
+#Parent,1,4118
+#UsedBy,1,()
+#Uses,1,(13069)
+Comment,0,
+Computer,0,
+CreationGUID,1,{AC2293E1-6AC6-4769-96A3-99D85C5DC801}
+End Time,0,
+EndedCode,0,
+Engine Version,0,
+FailureReason,0,
+Flow Survey,0,
+Hidden,0,
+ID,1,59
+Init State Time,0,
+LastVerificationSequence,0,
+ModificationGUID,1,{6274B7A5-B38A-4962-BD01-B7470011074C}
+ModifiedBy,1,VAK8324
+Name,1,POC_Area_v1 2hr
+NetworkScenarioUID,1,POC_Area_v1
+PreProcessAction,0,
+Rainfall Event,1,51
+Rainfall Event Index,0,
+RecycledBy,1,VAK8324
+RecycleParent,0,
+RecycleParentType,0,
+ResultsLocation,0,
+Run,1,16
+RunoffOnly,0,
+Save Final State,0,
+Start Time,0,
+StateSim,0,
+Status,0,
+Status2,0,
+SubStatus,0,
+WhenCreated,1,45869.47848380
+WhenModified,1,45869.47848380
+WhenRecycled,1,45875.46969907
+WhenRun,0,

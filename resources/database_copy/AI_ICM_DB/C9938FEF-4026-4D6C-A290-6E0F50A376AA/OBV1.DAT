@@ -1,0 +1,19 @@
+IWTDB002
+#Children,1,()
+#Parent,1,282
+#UsedBy,1,()
+#Uses,1,()
+Comment,0,
+CreationGUID,1,{6DCDEC69-2332-4FF7-9B9C-2BDF47450DD4}
+Flow Survey,1,1
+Hidden,1,0
+ID,0,
+ModificationGUID,1,{6DCDEC69-2332-4FF7-9B9C-2BDF47450DD4}
+ModifiedBy,1,ascott
+Name,1,Velocity
+RecycledBy,0,
+RecycleParent,0,
+RecycleParentType,0,
+WhenCreated,1,45251.40369213
+WhenModified,1,45315.58446759
+WhenRecycled,0,

@@ -1,0 +1,25 @@
+IWTDB002
+#Children,1,()
+#Parent,1,11695
+#UsedBy,1,(6935)
+#Uses,1,()
+Blob Handler,0,
+Buildup Time,0,
+Catchment Runoff Data Storage,0,
+Comment,0,
+CreationGUID,1,{72E4CDD8-353A-4E06-8023-9B26C17A31D8}
+Flow Survey,0,
+Hidden,1,0
+ID,1,86
+Live Group,0,
+Model Group,1,45
+ModificationGUID,1,{72E4CDD8-353A-4E06-8023-9B26C17A31D8}
+ModifiedBy,1,ascott
+Name,1,2hr
+Rainfall Event Storage,0,
+RecycledBy,0,
+RecycleParent,0,
+RecycleParentType,0,
+WhenCreated,1,45407.64253472
+WhenModified,1,45482.54155093
+WhenRecycled,0,

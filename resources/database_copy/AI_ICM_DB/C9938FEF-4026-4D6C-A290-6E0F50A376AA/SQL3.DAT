@@ -1,0 +1,21 @@
+IWTDB002
+#Children,1,()
+#Parent,1,1199
+#UsedBy,1,()
+#Uses,1,()
+Asset Group,0,
+Comment,0,
+CreationGUID,1,{873227FD-16D8-47E8-8E6A-CBE2AAAADED2}
+Hidden,1,0
+ID,0,
+Live Group,0,
+Model Group,1,4
+ModificationGUID,1,{873227FD-16D8-47E8-8E6A-CBE2AAAADED2}
+ModifiedBy,1,CAAH073861
+Name,1,Link Missing Invert or Invert = 0
+RecycledBy,0,
+RecycleParent,0,
+RecycleParentType,0,
+WhenCreated,1,44308.69344907
+WhenModified,1,44308.69606481
+WhenRecycled,0,

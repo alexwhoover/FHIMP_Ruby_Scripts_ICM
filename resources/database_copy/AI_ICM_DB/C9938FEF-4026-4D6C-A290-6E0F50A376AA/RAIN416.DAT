@@ -1,0 +1,25 @@
+IWTDB002
+#Children,1,()
+#Parent,1,174
+#UsedBy,1,()
+#Uses,1,()
+Blob Handler,0,
+Buildup Time,0,
+Catchment Runoff Data Storage,0,
+Comment,0,
+CreationGUID,1,{F6B4E2CB-D4F9-42B5-BFA3-295AC6FBA1AE}
+Flow Survey,0,
+Hidden,0,
+ID,1,416
+Live Group,0,
+Model Group,0,
+ModificationGUID,1,{9AB3AB38-8BDA-4AA6-938F-94E70F55620E}
+ModifiedBy,1,VAK8324
+Name,1,COV2018_Current_100y2h_Z5_AES
+Rainfall Event Storage,0,
+RecycledBy,1,VAK8324
+RecycleParent,1,59
+RecycleParentType,1,175
+WhenCreated,1,45875.44552083
+WhenModified,1,45875.44552083
+WhenRecycled,1,45875.44680556

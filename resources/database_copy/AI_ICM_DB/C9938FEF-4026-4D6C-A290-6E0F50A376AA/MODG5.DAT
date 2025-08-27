@@ -1,0 +1,22 @@
+IWTDB002
+#Children,1,"(282,538)"
+#Parent,1,689
+#UsedBy,1,()
+#Uses,1,()
+Comment,0,
+CreationGUID,1,{702E4D68-4921-425F-AE24-93049A64112D}
+Hidden,1,0
+ID,1,5
+Live Group,0,
+Master Group,1,2
+ModificationGUID,1,{702E4D68-4921-425F-AE24-93049A64112D}
+ModifiedBy,1,CAAH073861
+Name,1,Flow Survey Group
+NoInheritUserRoles,0,
+Parent,0,
+RecycledBy,0,
+RecycleParent,0,
+RecycleParentType,0,
+WhenCreated,1,44258.54358796
+WhenModified,1,44258.54358796
+WhenRecycled,0,

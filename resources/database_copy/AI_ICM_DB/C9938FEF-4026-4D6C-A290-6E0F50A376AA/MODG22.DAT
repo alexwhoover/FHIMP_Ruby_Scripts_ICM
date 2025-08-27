@@ -1,0 +1,22 @@
+IWTDB002
+#Children,1,"(534,790,1046,1302)"
+#Parent,1,2735
+#UsedBy,1,()
+#Uses,1,()
+Comment,0,
+CreationGUID,1,{B29F5824-2B60-4252-B434-7930C9C2573B}
+Hidden,1,0
+ID,1,22
+Live Group,0,
+Master Group,0,
+ModificationGUID,1,{B29F5824-2B60-4252-B434-7930C9C2573B}
+ModifiedBy,1,Andrew Scott
+Name,1,WWF Calibration
+NoInheritUserRoles,0,
+Parent,1,10
+RecycledBy,0,
+RecycleParent,0,
+RecycleParentType,0,
+WhenCreated,1,45744.56452546
+WhenModified,1,45744.56452546
+WhenRecycled,0,

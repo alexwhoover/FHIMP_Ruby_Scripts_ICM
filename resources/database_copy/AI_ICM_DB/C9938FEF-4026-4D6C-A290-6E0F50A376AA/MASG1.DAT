@@ -1,0 +1,21 @@
+IWTDB002
+#Children,1,"(689,945,431,687,943,1199)"
+#Parent,1,0
+#UsedBy,1,()
+#Uses,1,()
+Comment,0,
+CreationGUID,1,{9764AF12-C5AB-4117-9A88-FFD1AEE8457D}
+Hidden,1,0
+ID,1,1
+Master Group,0,
+ModificationGUID,1,{9764AF12-C5AB-4117-9A88-FFD1AEE8457D}
+ModifiedBy,1,Andrew Scott
+Name,1,Cambie-Heather (CAH)
+NoInheritUserRoles,0,
+Parent,0,
+RecycledBy,0,
+RecycleParent,0,
+RecycleParentType,0,
+WhenCreated,1,45744.50159722
+WhenModified,1,45744.50159722
+WhenRecycled,0,

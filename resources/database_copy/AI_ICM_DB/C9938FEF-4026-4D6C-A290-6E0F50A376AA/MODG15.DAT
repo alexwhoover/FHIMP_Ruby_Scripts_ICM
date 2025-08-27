@@ -1,0 +1,22 @@
+IWTDB002
+#Children,1,(681)
+#Parent,1,945
+#UsedBy,1,()
+#Uses,1,()
+Comment,0,
+CreationGUID,1,{D45E9CA4-EAF0-4F1F-BEC0-58AA832F96BB}
+Hidden,1,0
+ID,1,15
+Live Group,0,
+Master Group,1,3
+ModificationGUID,1,{D45E9CA4-EAF0-4F1F-BEC0-58AA832F96BB}
+ModifiedBy,1,Andrew Scott
+Name,1,CAH-Future Network
+NoInheritUserRoles,0,
+Parent,0,
+RecycledBy,0,
+RecycleParent,0,
+RecycleParentType,0,
+WhenCreated,1,45744.55967593
+WhenModified,1,45744.55967593
+WhenRecycled,0,

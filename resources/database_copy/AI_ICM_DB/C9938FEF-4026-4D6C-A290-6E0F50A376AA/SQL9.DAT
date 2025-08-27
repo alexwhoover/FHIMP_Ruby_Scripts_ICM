@@ -1,0 +1,21 @@
+IWTDB002
+#Children,1,()
+#Parent,1,1199
+#UsedBy,1,()
+#Uses,1,()
+Asset Group,0,
+Comment,0,
+CreationGUID,1,{F75A5D7A-DE2E-401A-AC3E-4D03DD7E5F1B}
+Hidden,1,0
+ID,0,
+Live Group,0,
+Model Group,1,4
+ModificationGUID,1,{F75A5D7A-DE2E-401A-AC3E-4D03DD7E5F1B}
+ModifiedBy,1,CAAH073861
+Name,1,Link Obvert above Ground
+RecycledBy,0,
+RecycleParent,0,
+RecycleParentType,0,
+WhenCreated,1,44308.70807870
+WhenModified,1,44308.70896991
+WhenRecycled,0,

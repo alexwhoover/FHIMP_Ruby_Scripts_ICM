@@ -1,0 +1,22 @@
+IWTDB002
+#Children,1,"(285,541,797,1053,1309,1565,1821,2077,2333,2589,2845,3101,3357,3613)"
+#Parent,1,433
+#UsedBy,1,()
+#Uses,1,()
+Comment,0,
+CreationGUID,1,{ABD15835-CD84-4EDB-9B63-2B2340D04452}
+Hidden,1,0
+ID,1,4
+Live Group,0,
+Master Group,1,1
+ModificationGUID,1,{ABD15835-CD84-4EDB-9B63-2B2340D04452}
+ModifiedBy,1,CAAH073861
+Name,1,SQL Group
+NoInheritUserRoles,0,
+Parent,0,
+RecycledBy,0,
+RecycleParent,0,
+RecycleParentType,0,
+WhenCreated,1,44258.55803241
+WhenModified,1,44258.55803241
+WhenRecycled,0,

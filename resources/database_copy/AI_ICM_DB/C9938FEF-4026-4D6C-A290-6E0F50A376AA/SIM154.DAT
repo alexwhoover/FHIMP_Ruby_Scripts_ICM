@@ -1,0 +1,40 @@
+IWTDB002
+#Children,1,()
+#Parent,1,4630
+#UsedBy,1,()
+#Uses,1,(98061)
+Comment,0,
+Computer,0,
+CreationGUID,1,{AECF60A5-0948-4F8A-82DE-F24FC5AE3C3F}
+End Time,0,
+EndedCode,0,
+Engine Version,0,
+FailureReason,0,
+Flow Survey,0,
+Hidden,0,
+ID,1,154
+Init State Time,0,
+LastVerificationSequence,0,
+ModificationGUID,1,{CD47B43C-0C56-4E32-8FEC-13B7F96F4D31}
+ModifiedBy,1,VAK8324
+Name,1,POC_Area_v1 COV2018_2100Moderate_2y1h_Z5_AES
+NetworkScenarioUID,1,POC_Area_v1
+PreProcessAction,0,
+Rainfall Event,1,383
+Rainfall Event Index,0,
+RecycledBy,0,
+RecycleParent,0,
+RecycleParentType,0,
+ResultsLocation,0,
+Run,1,18
+RunoffOnly,0,
+Save Final State,0,
+Start Time,0,
+StateSim,0,
+Status,0,
+Status2,0,
+SubStatus,0,
+WhenCreated,1,45875.45233796
+WhenModified,1,45875.45233796
+WhenRecycled,0,
+WhenRun,0,

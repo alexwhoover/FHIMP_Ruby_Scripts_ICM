@@ -1,0 +1,19 @@
+IWTDB002
+#Children,1,()
+#Parent,1,538
+#UsedBy,1,()
+#Uses,1,()
+Comment,0,
+CreationGUID,1,{4A813063-BC2B-4E3A-BEF6-B0FB166EFFCC}
+Flow Survey,1,2
+Hidden,1,0
+ID,0,
+ModificationGUID,1,{4A813063-BC2B-4E3A-BEF6-B0FB166EFFCC}
+ModifiedBy,1,ascott
+Name,1,Depth
+RecycledBy,0,
+RecycleParent,0,
+RecycleParentType,0,
+WhenCreated,1,45274.40496528
+WhenModified,1,45327.55758102
+WhenRecycled,0,

@@ -1,0 +1,22 @@
+IWTDB002
+#Children,1,"(1708,1964)"
+#Parent,1,4527
+#UsedBy,1,()
+#Uses,1,()
+Comment,0,
+CreationGUID,1,{07846585-5EF1-48A0-BF0F-9455B7AE6EC7}
+Hidden,1,0
+ID,1,30
+Live Group,0,
+Master Group,0,
+ModificationGUID,1,{07846585-5EF1-48A0-BF0F-9455B7AE6EC7}
+ModifiedBy,1,Andrew Scott
+Name,1,System Performance Graphs
+NoInheritUserRoles,0,
+Parent,1,17
+RecycledBy,0,
+RecycleParent,0,
+RecycleParentType,0,
+WhenCreated,1,45744.59876157
+WhenModified,1,45744.59876157
+WhenRecycled,0,

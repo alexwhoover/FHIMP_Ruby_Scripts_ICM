@@ -1,0 +1,21 @@
+IWTDB002
+#Children,1,()
+#Parent,1,1199
+#UsedBy,1,()
+#Uses,1,()
+Asset Group,0,
+Comment,0,
+CreationGUID,1,{51DA48AC-7E2D-42D0-A2A3-D020A616BAAC}
+Hidden,1,0
+ID,0,
+Live Group,0,
+Model Group,1,4
+ModificationGUID,1,{51DA48AC-7E2D-42D0-A2A3-D020A616BAAC}
+ModifiedBy,1,GOW7023
+Name,1,Link Missing Diameter
+RecycledBy,0,
+RecycleParent,0,
+RecycleParentType,0,
+WhenCreated,1,44308.69630787
+WhenModified,1,45153.46120370
+WhenRecycled,0,

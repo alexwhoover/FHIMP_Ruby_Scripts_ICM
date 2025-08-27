@@ -1,0 +1,25 @@
+IWTDB002
+#Children,1,()
+#Parent,1,174
+#UsedBy,1,()
+#Uses,1,()
+Blob Handler,0,
+Buildup Time,0,
+Catchment Runoff Data Storage,0,
+Comment,0,
+CreationGUID,1,{416CF724-EA0F-4055-A1CC-2638B79A5C11}
+Flow Survey,0,
+Hidden,0,
+ID,1,436
+Live Group,0,
+Model Group,0,
+ModificationGUID,1,{8AFE5EF8-AFCA-47CA-BDC0-AD2C430F7A92}
+ModifiedBy,1,VAK8324
+Name,1,COV2018_Current_25y1h_Z1N_SCS
+Rainfall Event Storage,0,
+RecycledBy,1,VAK8324
+RecycleParent,1,59
+RecycleParentType,1,175
+WhenCreated,1,45875.44553241
+WhenModified,1,45875.44553241
+WhenRecycled,1,45875.44688657

@@ -1,0 +1,21 @@
+IWTDB002
+#Children,1,()
+#Parent,1,687
+#UsedBy,1,()
+#Uses,1,()
+Asset Group,0,
+Comment,0,
+CreationGUID,1,{6FDBF1AA-1DB3-4A8F-B7AC-0285A8C24BC3}
+Hidden,1,0
+ID,0,
+Live Group,0,
+Model Group,1,2
+ModificationGUID,1,{6FDBF1AA-1DB3-4A8F-B7AC-0285A8C24BC3}
+ModifiedBy,1,CAAH073861
+Name,1,Parcels
+RecycledBy,0,
+RecycleParent,0,
+RecycleParentType,0,
+WhenCreated,1,44258.55434028
+WhenModified,1,44258.55434028
+WhenRecycled,0,

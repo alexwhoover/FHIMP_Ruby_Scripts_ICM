@@ -1,0 +1,27 @@
+IWTDB002
+#Children,1,()
+#Parent,1,2479
+#UsedBy,1,()
+#Uses,1,()
+CheckInGUID,0,
+Comment,0,
+Computer,0,
+CreationGUID,1,{C0B7B1EA-3A44-41F0-B125-E7EDBDAB4974}
+Current,0,
+Default,0,
+Hidden,0,
+ID,0,
+Locked,0,
+Model Group,1,9
+ModificationGUID,1,{C0B7B1EA-3A44-41F0-B125-E7EDBDAB4974}
+ModifiedBy,1,ROD3922
+Name,1,SWMM network
+Parent,0,
+RecycledBy,0,
+RecycleParent,0,
+RecycleParentType,0,
+ServerBranchID,0,
+WhenCreated,1,45847.47317130
+WhenModified,1,45847.47317130
+WhenRecycled,0,
+WhenValidated,0,
